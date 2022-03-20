@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>DELSBEAT</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="HimanshuGupta">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">	
+		<!-- Animate CSS -->
+		<link href="css/animate.min.css" rel="stylesheet">
+		<!-- Basic stylesheet -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">		
+		<!-- Custom CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style-color.css" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/logo/favicon.ico">
+	</head>
+	
+	<body>
+		
+		<!-- modal for booking ticket form -->
+		<div class="modal fade" id="bookTicket" tabindex="-1" role="dialog" aria-labelledby="BookTicket">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Name of The Event &nbsp; <small><span class="label label-success">Available</span> &nbsp; <span class="label label-danger">Not Available</span></small></h4>
+					</div>
+					<!-- form for events ticket booking -->
+					<form>
+						<div class="modal-body">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Email</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@mail.com">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputContact">Contact</label>
+								<input type="text" class="form-control" id="exampleInputContact" placeholder="+91 55 5555 5555">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputSeats">Number of Tickets</label>
+								<select class="form-control" id="exampleInputSeats">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> I accept the Terms of Service
+								</label>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<!-- link to payment gatway here -->
+							<button type="button" class="btn btn-primary">Book Now</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<!-- wrapper -->
+		<div class="wrapper" id="home">
+		
+			<!-- header area -->
+			<header>
+				<!-- secondary menu -->
+				<nav class="secondary-menu">
+					<div class="container">
+						<!-- secondary menu left link area -->
+						<div class="sm-left">
+							<strong>Phone</strong>:&nbsp; <a href="#">+2348109177398</a>&nbsp;&nbsp;&nbsp;&nbsp;
+							<strong>E-mail</strong>:&nbsp; <a href="#">Ibiyemiareo@gmail.com</a>
+						</div>
+						<!-- secondary menu right link area -->
+						<div class="sm-right">
+							<!-- social link -->
+							<div class="sm-social-link">
+								<a class="h-facebook" href="#"><i class="fa fa-facebook"></i></a>
+								<a class="h-twitter" href="#"><i class="fa fa-twitter"></i></a>
+								<a class="h-google" href="#"><i class="fa fa-google-plus"></i></a>
+								<a class="h-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</nav>
+				<!-- primary menu -->
+				<nav class="navbar navbar-fixed-top navbar-default">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<!-- logo area -->
+							<a class="navbar-brand" href="#home">
+								<!-- logo image -->
+								<img class="img-responsive" src="img/DELSBEAT.png" alt="" />
+							</a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#latestalbum">Home</a></li>
+								<li><a href="#featuredalbum">Music Services</a>
+									<div class="dropdown">
+										<div><a href="#" class="navbutton"> Onsite Service </a> </div>
+										<div><a href="#" class="navbutton"> Parts Delivery </a> </div>
+										<div><a href="#" class="navbutton">Request Callback</a> </div>
+									  </div>
+								</li>
+								<li><a href="#joinus">Sound Kits</a></li>
+								<li><a href="#portfolio">Category</a>
+									<div class="dropdown">
+										<div><a href="#" class="navbutton"> Beats</a> </div>
+										<div><a href="#" class="navbutton"> Loops</a> </div>
+										<div><a href="#" class="navbutton">Sample packs </a> </div>
+										<div><a href="#" class="navbutton">Drum kits </a> </div>
+									  </div>
+								</li>
+								<li><a href="#events">Contact</a></li>
+								<li><a href="#team"><img src="img/search_black_24dp.svg" alt=""></a></li>
+								<li><a href="#team"><img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></a></li>
+								
+							</ul>
+						</div> <!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+			</header>
+			<!--/ header end -->
+			
+			<!-- banner area -->
+			<div class="banner banner-viewport">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img class="banner-img" src="img/music-producer.jpg" alt="...">
+							<div class="container">
+								<!-- banner caption -->
+								<div class="carousel-caption slide-one">
+									<!-- heading -->
+									<h2 class="animated fadeInLeftBig"><i class="fa fa-music"></i>High Quality Beats Instrumentals For Music Artists and Creators</h2>
+									<!-- paragraph -->
+									<h3 class="animated fadeInRightBig">Find More Innovative &amp; Creative Music Albums.</h3>
+									<!-- button -->
+									<a href="#" class="animated fadeIn btn btn-theme">Download Here</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<img class="banner-img" src="img/mp5.jpg" alt="...">
+							<div class="container">
+								<!-- banner caption -->
+								<div class="carousel-caption slide-two">
+									<!-- heading -->
+									<h2 class="animated fadeInLeftBig"><i class="fa fa-headphones"></i> Listen Now...</h2>
+									<!-- paragraph -->
+									<h3 class="animated fadeInRightBig">Lorem ipsum dolor sit amet, consectetur elit.</h3>
+									<!-- button -->
+									<a href="#" class="animated fadeIn btn btn-theme">Listen Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="fa fa-arrow-left" aria-hidden="true"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="fa fa-arrow-right" aria-hidden="true"></span>
+					</a>
+				</div>
+			</div>
+			<!--/ banner end -->
+			
+			<!-- block for animate navigation menu -->
+			<div class="nav-animate"></div>
+			
+			<!-- Hero block area -->
+			<div id="latestalbum" class="hero pad">
+				<div class="container">
+					<!-- hero content -->
+					<div class="hero-content ">
+						<!-- heading -->
+						<h2><span style="color: #950213;">Beat</span> List</h2>
+						<hr>
+						<!-- paragraph -->
+						<p>I make the best <strong class="theme-color">beats</strong> and now we control the world best <strong class="theme-color">sounds</strong>.</p>
+					</div>
+					<!-- hero play list -->
+					<div class="hero-playlist">
+
+						<table>
+							<tr>
+								<th>TITLE</th>
+								<th></th>
+								<th>TIME</th>
+								<th>BPM</th>
+								<th></th>
+							  </tr>
+							  
+							  <tr>
+								<td>
+									<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/Rectangle 4.png" alt="">
+									</div>
+									<div>
+										<h5>Burna Type Beat</h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
+									<progress id="file" value="32" max="100"> 32% </progress>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+
+							  <tr>
+								<td>
+									<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/Rectangle 5.png" alt="">
+									</div>
+									<div>
+										<h5>Dels Beat </h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
+									<progress  value="32" max="100"> 32% </progress>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+
+							  <tr>
+								<td>
+									<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/a3.jpg" alt="">
+									</div>
+									<div>
+										<h5>Davido / Rema Type Beat</h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
+									<progress  value="32" max="100"> 32% </progress>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+
+							  <tr>
+								<td>
+									<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/Rectangle 8.png" alt="">
+									</div>
+									<div>
+										<h5>Wizkid / Tekno Type Beat</h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
+									<progress value="32" max="100"> 32% </progress>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+
+							  <tr>
+								<td>
+								<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/a5.jpg" alt="">
+									</div>
+									<div>
+										<h5>Hip-Hop Beat</h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
+									<progress value="32" max="100"> 32% </progress>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+
+							  <tr>
+								<td>
+									<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/a6.jpg" alt="">
+									</div>
+									<div>
+										<h5>Juju Type Beat</h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
+									<progress value="32" max="100"> 32% </progress>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+
+							  <tr>
+								<td>
+									<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/a7.jpg" alt="">
+									</div>
+									<div>
+										<h5>RnB/Pop Type Beat</h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
+									<progress value="32" max="100"> 32% </progress>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+							  
+						</table>
+
+
+					</div>
+				</div>
+			</div>
+			<!--/ hero end -->
+
+
+			<!-- work with us -->
+			<div class="work-with-us pad" id="joinus">
+					<div class="container">
+						<!-- default heading -->
+						<div class="work-content ">
+							<!-- heading -->
+							<h2><span style="color: #950213;">How It</span> Works</h2>
+						</div>
+						<!-- why work with us content -->
+						<div class="why-content">
+							<!-- paragraph -->
+							
+							<div class="row">
+								<div class="col-md-4 col-sm-6">
+									<!-- why work with us item -->
+									
+									<div class="why-item  delay-one">
+										<div  class="why-icon">
+											<img class="why-icon-img" src="img/playlist_add_check_black_24dp.svg" alt="">
+										</div>
+										<span class="why-number">1. Select Beats</span>
+										<!-- paragraph -->
+										<p>Click the <span><img src="img/cart-black.svg" alt=""></span> icon and choose the license
+											of your choice.</p>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<!-- why work with us item -->
+									<div class="why-item  delay-two">
+										<div  class="why-icon">
+											<img class="why-icon-img" src="img/credit_score_black_24dp.svg" alt="">
+										</div>
+										<span class="why-number">2. Checkout</span>
+										<!-- paragraph -->
+										<p>Click the checkout button and enter
+											your payment details. </p>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<!-- why work with us item -->
+									<div class="why-item  delay-three">
+										<div  class="why-icon">
+											<img class="why-icon-img" src="img/cloud_download_black_24dp.svg" alt="">
+										</div>
+										<span class="why-number">3. Instant Download</span>
+										<!-- paragraph -->
+										<p>You can download beats instantly after
+											your payment..</p>
+									</div>
+								</div>
+							
+							</div>
+							<!-- apply button -->
+							
+						</div>
+					</div>
+			</div>
+			<!--/ end work with us -->
+
+
+			<!-- work with us -->
+			<div class="work-with-us pad" id="pricing">
+				<div class="price-content ">
+					<!-- heading -->
+					<h2>Licensing & Pricing</h2>
+				</div>
+				<div class="container">
+					<div class="row white">
+						<div class="block">
+		
+							<div class="col-xs-12 col-sm-6 col-md-3">
+									<ul class="pricing p-green">
+										<li class="big-pricing" >
+											<img src="http://bread.pp.ua/n/settings_g.svg" alt="">
+											<h1>$20.00</h1>
+										</li>
+										<li class="big-pricing">
+											<img src="http://bread.pp.ua/n/settings_g.svg" alt="">
+											<h2>Basic Lease</h2>
+										</li>
+										<li class="big-pricing">
+											<img src="http://bread.pp.ua/n/settings_g.svg" alt="">
+											<h2>Non - Profit</h2>
+										</li>
+										<li>Untagged High Quality MP3 
+											(320kbps)</li>
+										<li>Non-Profit/Performances
+										</li>
+										<li>Non Commercial Use
+										</li>
+										<li>Limit 100,000 (Streams</li>
+										<li>Music Video (No)
+										</li>
+										<li>Monitization Platforms 
+											(Spotify, Apple Music) (NO)• 
+											Youtube Content ID (NO)
+											</li>
+										<li>Youtube Upload (Yes)
+											DelsBeat Studio still maintains 
+											Beat Ownership</li>
+										<!-- <li>
+											<h3>$199</h3>
+											<span>per month</span>
+										</li> -->
+										<li>
+											<button>BUY 3, GET 2 FREE</button>
+										</li>
+									</ul>
+							</div>
+		
+							<div class="col-xs-12 col-sm-6 col-md-3">
+									<ul class="pricing p-yel">
+										<li class="big-pricing">
+											<img src="http://bread.pp.ua/n/settings_y.svg" alt="">
+											<h1>$100.00</h1>
+										</li>
+										<li class="big-pricing">
+											<img src="http://bread.pp.ua/n/settings_g.svg" alt="">
+											<h2>Premium lease</h2>
+										</li>
+										<li class="big-pricing">
+											<img src="http://bread.pp.ua/n/settings_g.svg" alt="">
+											<h2>Monetization</h2>
+										</li>
+										<li>Untagged MP3 (320kbps) + 
+											WAV
+											</li>
+										<li>100,000 Units In Distributions</li>
+										<li>Up to 1,000,000 monetized
+											Audio & Video streams
+										   </li>
+										<li>DelsBeat Studio still maintains 
+											beat ownership
+											</li>
+										<li>Audiomack Upload (Yes)
+										</li>
+										<li>COMMERCIAL USE
+										</li>
+										<li>Good For Mixing/Mastering</li>
+										<li>Upload (Spotify, Itunes etc) (YES)
+											Youtube Content ID (NO)
+											YouTube Monetization (Yes)</li>
+										<!-- <li>
+											<h3>$299</h3>
+											<span>per month</span>
+										</li> -->
+										<li>
+											<button>BUY 2, GET 1 FREE</button>
+										</li>
+									</ul>
+							</div>
+		
+							<div class="col-xs-12 col-sm-6 col-md-3">
+									<ul class="pricing p-red">
+										<li class="big-pricing">
+											<img src="http://bread.pp.ua/n/settings_r.svg" alt="">
+											<h1>$200.00</h1>
+										</li>
+										<li class="big-pricing">
+											<img src="http://bread.pp.ua/n/settings_g.svg" alt="">
+											<h2>Unlimited lease</h2>
+										</li>
+										<li class="big-pricing">
+											<img src="http://bread.pp.ua/n/settings_g.svg" alt="">
+											<h2>Best Deal</h2>
+										</li>
+										<li>Untagged MP3 (320kbps) + 
+											WAV + Trackouts
+											</li>
+										<li>Unlimited Distribution
+										</li>
+										<li>Unlimited Free Downloads</li>
+										<li>Unlimited Audio & Video Streams</li>
+										<li>Music Video & Paid Performances</li>
+										<li>Unlimited Radio & TV Stations
+										</li>
+										<li>DelsBeat Studio still maintains
+											Beat Ownership</li>
+										<!-- <li>
+											<h3>$399</h3>
+											<span>per month</span>
+										</li> -->
+										<li>
+											<button>BUY 3, GET 2 FREE</button>
+										</li>
+									</ul>
+							</div>
+		
+							<div class="col-xs-12 col-sm-6 col-md-3">
+									<ul class="pricing p-blue">
+										<li class="big-pricing">
+											<img src="http://bread.pp.ua/n/settings_b.svg" alt="">
+											<h2>Make an Offer</h2>
+										</li>
+										<li class="big-pricing">
+											<h2>Price starts from $1,000</h2>
+											<h3>$1,000</h3>
+											
+										</li>
+										
+										<li>Untagged MP3 (320kbps) + 
+											Wav + Trackouts</li>
+										<li>Unlimited Units In Sales
+										</li>
+										<li>Unlimited monetized 
+											Audio & Video streams
+											</li>
+										<li>Unlimited Radio & TV stations
+										</li>
+										<li>Music Video & Paid Performances
+										</li>
+										<li>Beat Marked as SOLD/Taken Down
+											Full Ownership
+										</li>
+										
+										<li>
+											<button>BUY 3, GET 2 FREE</button>
+										</li>
+									</ul>
+							</div>
+		
+		
+						</div><!-- /block -->
+					</div>
+				</div>
+			</div>
+			
+
+			
+			<!-- promo -->
+			<div class="promo parallax-one pad">
+				<div class="container">
+					<!-- promo element -->
+					<div class="promo-element">
+						<!-- heading -->
+						<h3>Music An Art...</h3>
+						<!-- paragraph -->
+						<p>"I think that <strong>music, beats, melody, sound</strong> are a natural part of our DNA, our vibe. It's just a part of the cycle of our lives, we're born, we have eyes, we have music."</p>
+						<p class="author">Author: Ziggy Marley</p>
+						<!-- link -->
+						<a class="promo-link" href="#"><i class="fa fa-play-circle"></i></a>
+					</div>
+				</div>
+			</div>
+			<!--/ promo end -->
+			
+			<!-- featured abbum -->
+			<div class="featured pad" id="featuredalbum">
+				<div class="container">
+					<!-- default heading -->
+					<div class="work-content ">
+						<!-- heading -->
+						<h2><span style="color: #950213;">Featured</span> Beats</h2>
+					</div>
+					<!-- featured album elements -->
+					<div class="featured-element">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<!-- featured item -->
+								<div class="featured-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- image -->
+										<img class="img-responsive" src="img/b3.jpg" alt="" />
+										<!-- paragraph -->
+										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+									</div>
+									<!-- featured information -->
+									<div class="featured-item-info">
+										<!-- featured title -->
+										<h4>Power Pop</h4>
+										<!-- horizontal line -->
+										<hr />
+										<!-- some responce from social medial or web likes -->
+										<div class="featured-like" >
+												<p>1300+ <span class="label label-theme">Like</span></p>
+												<span class="featured-btn">BUY <img src="img/add_shopping_cart_white_18dp.svg" alt=""></span>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- featured item -->
+								<div class="featured-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- image -->
+										<img class="img-responsive" src="img/b4.jpg" alt="" />
+										<!-- paragraph -->
+										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+									</div>
+									<!-- featured information -->
+									<div class="featured-item-info">
+										<!-- featured title -->
+										<h4>Bad Brains</h4>
+										<!-- horizontal line -->
+										<hr />
+										<!-- some responce from social medial or web likes -->
+										<div class="featured-like" >
+											<p>1300+ <span class="label label-theme">Like</span></p>
+											<span class="featured-btn">BUY <img src="img/add_shopping_cart_white_18dp.svg" alt=""></span>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- featured item -->
+								<div class="featured-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- image -->
+										<img class="img-responsive" src="img/b2.jpg" alt="" />
+										<!-- paragraph -->
+										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+									</div>
+									<!-- featured information -->
+									<div class="featured-item-info">
+										<!-- featured title -->
+										<h4>The Mars Volta</h4>
+										<!-- horizontal line -->
+										<hr />
+										<!-- some responce from social medial or web likes -->
+										<div class="featured-like" >
+											<p>1300+ <span class="label label-theme">Like</span></p>
+											<span class="featured-btn">BUY <img src="img/add_shopping_cart_white_18dp.svg" alt=""></span>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- featured item -->
+								<div class="featured-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- image -->
+										<img class="img-responsive" src="img/b5.jpg" alt="" />
+										<!-- paragraph -->
+										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+									</div>
+									<!-- featured information -->
+									<div class="featured-item-info">
+										<!-- featured title -->
+										<h4>Dirty Dancing</h4>
+										<!-- horizontal line -->
+										<hr />
+										<!-- some responce from social medial or web likes -->
+										<div class="featured-like" >
+											<p>1300+ <span class="label label-theme">Like</span></p>
+											<span class="featured-btn">BUY <img src="img/add_shopping_cart_white_18dp.svg" alt=""></span>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- featured item -->
+								<div class="featured-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- image -->
+										<img class="img-responsive" src="img/b6.jpeg" alt="" />
+										<!-- paragraph -->
+										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+									</div>
+									<!-- featured information -->
+									<div class="featured-item-info">
+										<!-- featured title -->
+										<h4>RnB/Pop</h4>
+										<!-- horizontal line -->
+										<hr />
+										<!-- some responce from social medial or web likes -->
+										<div class="featured-like" >
+											<p>1300+ <span class="label label-theme">Like</span></p>
+											<span class="featured-btn">BUY <img src="img/add_shopping_cart_white_18dp.svg" alt=""></span>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- featured item -->
+								<div class="featured-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- image -->
+										<img class="img-responsive" src="img/b7.jpeg" alt="" />
+										<!-- paragraph -->
+										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+									</div>
+									<!-- featured information -->
+									<div class="featured-item-info">
+										<!-- featured title -->
+										<h4>Punk Compilation</h4>
+										<!-- horizontal line -->
+										<hr />
+										<!-- some responce from social medial or web likes -->
+										<div class="featured-like" >
+											<p>1300+ <span class="label label-theme">Like</span></p>
+											<span class="featured-btn">BUY <img src="img/add_shopping_cart_white_18dp.svg" alt=""></span>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- featured item -->
+								<div class="featured-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- image -->
+										<img class="img-responsive" src="img/b8.png" alt="" />
+										<!-- paragraph -->
+										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+									</div>
+									<!-- featured information -->
+									<div class="featured-item-info">
+										<!-- featured title -->
+										<h4>Hot/Jazz</h4>
+										<!-- horizontal line -->
+										<hr />
+										<!-- some responce from social medial or web likes -->
+										<div class="featured-like" >
+											<p>1300+ <span class="label label-theme">Like</span></p>
+											<span class="featured-btn">BUY <img src="img/add_shopping_cart_white_18dp.svg" alt=""></span>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- featured item -->
+								<div class="featured-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- image -->
+										<img class="img-responsive" src="img/b1.png" alt="" />
+										<!-- paragraph -->
+										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+									</div>
+									<!-- featured information -->
+									<div class="featured-item-info">
+										<!-- featured title -->
+										<h4>Afro/Pop</h4>
+										<!-- horizontal line -->
+										<hr />
+										<!-- some responce from social medial or web likes -->
+										<div class="featured-like" >
+											<p>1300+ <span class="label label-theme">Like</span></p>
+											<span class="featured-btn">BUY <img src="img/add_shopping_cart_white_18dp.svg" alt=""></span>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- features end -->
+			
+			<!-- call to action -->
+			<div class="cta parallax-one pad">
+				<div class="container">
+					<!-- cta element -->
+					<div class="cta-element ">
+						<div class="row">
+							<div class="col-md-9 col-sm-8">
+								<!-- heading -->
+								<h3>Melodi, A Full Beat Album </h3>
+								<!-- paragraph -->
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim sectetur adipiscing elit, sed do eiusmod tempoad minim veniam consequat.</p>
+							</div>
+							<div class="col-md-3 col-sm-4">
+								<div class="cta-btn text-center">
+									<!-- purchase now button -->
+									<a href="#" class="btn btn-default btn-lg">Listen Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ cta end -->
+			
+			
+			<!-- news letter -->
+			<div class="news-letter">
+				<div class="container">
+					<!-- news letter inner content -->
+					<div class="news-content ">
+						<!-- heading -->
+						<h3>Sign Up For Newsletter</h3>
+						<!-- paragraph -->
+						<p>Subscribe for more awesome stuff from me.</p>
+						<!-- subscribe form -->
+						<form>
+							<div class="input-group">
+								<input type="text" class="form-control input-lg" placeholder="Email">
+								<span class="input-group-btn">
+									<button class="btn btn-default btn-lg subcribe-btn" type="button">Subscribe</button>
+								</span>
+							</div><!-- /input-group -->
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- news letter end -->
+			
+			
+			<!-- contact -->
+			<div class="contact pad" id="contact">
+				<div class="container">
+					<!-- default heading -->
+					<div class="work-content ">
+						<!-- heading -->
+						<h2><span style="color: #950213;">Contact</span> Me</h2>
+					</div>
+					<div class="row">	
+						<div class="col-md-4 col-sm-4">
+							<!-- contact item -->
+							<div class="contact-item ">
+								<!-- big icon -->
+								<i class="fa fa-street-view"></i>
+								<!-- contact details  -->
+								<span class="contact-details">Lagos mainland, Lagos.</span>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<!-- contact item -->
+							<div class="contact-item ">
+								<!-- big icon -->
+								<i class="fa fa-wifi"></i>
+								<!-- contact details  -->
+								<span class="contact-details">Ibiyemiareo@gmail.com</span>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<!-- contact item -->
+							<div class="contact-item ">
+								<!-- big icon -->
+								<i class="fa fa-phone"></i>
+								<!-- contact details  -->
+								<span class="contact-details">+2348109177398</span>
+							</div>
+						</div>
+					</div>
+					<!-- form content -->
+					<div class="form-content ">
+						<!-- paragraph -->
+						<p>Do you have any <span style="color: #e90404;">Ideas</span> in your mind? Drop me a line.</p>
+						<form role="form" id="contactForm" method="post">
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+										<label for="name">Name</label>
+										<input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+									</div>
+									<div class="form-group">
+										<label for="email">Email</label>
+										<input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+									</div>
+									<div class="form-group">
+										<label for="phone">Phone</label>
+										<input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone">
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+										<label for="message">Message</label>
+										<textarea class="form-control" id="message" name="message" rows="9" placeholder="Enter message"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-lg btn-theme">Send Message</button>
+							</div>
+						</form>
+												
+					</div>
+
+				</div>
+			</div>
+			<!-- contact end -->
+			
+			<!-- footer -->
+			<footer class="footer-distributed">
+
+				<div class="footer-left">
+	
+					<div><img src="img/DELSBEAT.png" alt=""></div>
+	
+					<p class="footer-links">
+						<a href="#" class="link-1">Home</a>
+						
+						<a href="#">Blog</a>
+					
+						<a href="#">Pricing</a>
+					
+						<a href="#">About</a>
+						
+						<a href="#">Beats</a>
+						
+						<a href="#">Contact</a>
+					</p>
+	
+					<p class="footer-company-name">T.B Production Studio © 2022 All rights reserved</p>
+				</div>
+	
+				<div class="footer-center">
+	
+					<div>
+						<i class="fa fa-map-marker"></i>
+						<p><span>Lagos mainland</span>Lagos</p>
+					</div>
+	
+					<div>
+						<i class="fa fa-phone"></i>
+						<p>+2348109177398</p>
+					</div>
+	
+					<div>
+						<i class="fa fa-envelope"></i>
+						<p><a href="mailto:Ibiyemiareo@gmail.com">Ibiyemiareo@gmail.com</a></p>
+					</div>
+	
+				</div>
+	
+				<div class="footer-right">
+	
+					<p class="footer-company-about">
+						<span>About Me</span>
+						I make all kinds of beats both free and premiums type beats.
+					</p>
+	
+					<div class="footer-icons">
+	
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-github"></i></a>
+	
+					</div>
+	
+				</div>
+	
+			</footer>
+			<!-- footer end -->
+			
+			<!-- Scroll to top -->
+			<span class="totop"><a href="#"><i class="fa fa-chevron-up"></i></a></span> 
+			
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- WayPoints JS -->
+		<script src="js/waypoints.min.js"></script>
+		<!-- Include js plugin -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- One Page Nav -->
+		<script src="js/jquery.nav.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+	</body>	
+</html>
