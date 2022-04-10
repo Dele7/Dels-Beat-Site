@@ -121,16 +121,16 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#latestalbum">Home</a></li>
-								<li><a href="#featuredalbum">Music Services</a>
+								<li><a href="#banner">Home</a></li>
+								<li><a href="#latestalbum">Beats</a>
 									<div class="dropdown">
 										<div><a href="#" class="navbutton"> Onsite Service </a> </div>
 										<div><a href="#" class="navbutton"> Parts Delivery </a> </div>
 										<div><a href="#" class="navbutton">Request Callback</a> </div>
 									  </div>
 								</li>
-								<li><a href="#joinus">Sound Kits</a></li>
-								<li><a href="#portfolio">Category</a>
+								<li><a href="#pricing">Pricing</a></li>
+								<li><a href="#featuredalbum">Featured Beats</a>
 									<div class="dropdown">
 										<div><a href="#" class="navbutton"> Beats</a> </div>
 										<div><a href="#" class="navbutton"> Loops</a> </div>
@@ -138,7 +138,7 @@
 										<div><a href="#" class="navbutton">Drum kits </a> </div>
 									  </div>
 								</li>
-								<li><a href="#events">Contact</a></li>
+								<li><a href="#contact">Contact</a></li>
 								<li><a href="#team"><img src="img/search_black_24dp.svg" alt=""></a></li>
 								<li><a href="#team"><img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></a></li>
 								
@@ -150,12 +150,12 @@
 			<!--/ header end -->
 			
 			<!-- banner area -->
-			<div class="banner banner-viewport">
+			<div class="banner banner-viewport" id="banner">
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img class="banner-img" src="img/music-producer.jpg" alt="...">
+							<img class="banner-img" src="img/banner/b3.jpg" alt="...">
 							<div class="container">
 								<!-- banner caption -->
 								<div class="carousel-caption slide-one">
@@ -164,24 +164,24 @@
 									<!-- paragraph -->
 									<h3 class="animated fadeInRightBig">Find More Innovative &amp; Creative Music Albums.</h3>
 									<!-- button -->
-									<a href="#" class="animated fadeIn btn btn-theme">Download Here</a>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<img class="banner-img" src="img/mp5.jpg" alt="...">
-							<div class="container">
-								<!-- banner caption -->
-								<div class="carousel-caption slide-two">
-									<!-- heading -->
-									<h2 class="animated fadeInLeftBig"><i class="fa fa-headphones"></i> Listen Now...</h2>
-									<!-- paragraph -->
-									<h3 class="animated fadeInRightBig">Lorem ipsum dolor sit amet, consectetur elit.</h3>
-									<!-- button -->
 									<a href="#" class="animated fadeIn btn btn-theme">Listen Now</a>
 								</div>
 							</div>
 						</div>
+						<!-- <div class="item">
+							<img class="banner-img" src="img/mp5.jpg" alt="...">
+							<div class="container">
+								
+								<div class="carousel-caption slide-two">
+								
+									<h2 class="animated fadeInLeftBig"><i class="fa fa-headphones"></i> Listen Now...</h2>
+									
+									<h3 class="animated fadeInRightBig">Lorem ipsum dolor sit amet, consectetur elit.</h3>
+									
+									<a href="#" class="animated fadeIn btn btn-theme">Listen Now</a>
+								</div>
+							</div>
+						</div> -->
 					</div>
 
 					<!-- Controls -->
@@ -209,8 +209,17 @@
 						<!-- paragraph -->
 						<p>I make the best <strong class="theme-color">beats</strong> and now we control the world best <strong class="theme-color">sounds</strong>.</p>
 					</div>
-					<!-- hero play list -->
-					<div class="hero-playlist">
+
+					<div class="tab">
+						<button class="tablinks active" onclick="openCity(event, 'AllBeats')">All Beats</button>
+						<button class="tablinks" onclick="openCity(event, 'AfroPop')">Afro/Pop</button>
+						<button class="tablinks" onclick="openCity(event, 'HipHop')">Hip-Hop</button>
+					
+					</div>
+
+					<div id="AllBeats" class="tabcontent active-tab">
+						<!-- hero play list -->
+						<div class="hero-playlist">
 
 						<table>
 							<tr>
@@ -234,8 +243,12 @@
 								</div>
 								</td>
 								<td>
-									<label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
-									<progress id="file" value="32" max="100"> 32% </progress>
+									<!-- <label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
+									<progress id="file" value="32" max="100"> 32% </progress> -->
+									<audio controls>
+										<source src="audio/'SHO MI'.mp3" type="audio/mpeg">
+									  Your browser does not support the audio element.
+									</audio>
 								</td>
 								<td>3:20</td>
 								<td>110</td>
@@ -258,8 +271,10 @@
 								</div>
 								</td>
 								<td>
-									<label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
-									<progress  value="32" max="100"> 32% </progress>
+									<audio controls>
+										<source src="audio/H1 B MAJ  67 BPM.mp3" type="audio/mpeg">
+									  Your browser does not support the audio element.
+									</audio>
 								</td>
 								<td>3:20</td>
 								<td>110</td>
@@ -282,8 +297,9 @@
 								</div>
 								</td>
 								<td>
-									<label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
-									<progress  value="32" max="100"> 32% </progress>
+									<audio controls>
+										<source src="audio/kilo.mp3" type="audio/mpeg">
+									</audio>
 								</td>
 								<td>3:20</td>
 								<td>110</td>
@@ -306,8 +322,9 @@
 								</div>
 								</td>
 								<td>
-									<label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
-									<progress value="32" max="100"> 32% </progress>
+									<audio controls>
+										<source src="audio/last one2.mp3" type="audio/mpeg">
+									</audio>
 								</td>
 								<td>3:20</td>
 								<td>110</td>
@@ -330,8 +347,9 @@
 								</div>
 								</td>
 								<td>
-									<label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
-									<progress value="32" max="100"> 32% </progress>
+									<audio controls>
+										<source src="audio/On Top 122 BPM E MAJOR TAG.mp3" type="audio/mpeg">
+									</audio>
 								</td>
 								<td>3:20</td>
 								<td>110</td>
@@ -354,8 +372,9 @@
 								</div>
 								</td>
 								<td>
-									<label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
-									<progress value="32" max="100"> 32% </progress>
+									<audio controls>
+										<source src="audio/palms lekki 104bpm TAG.mp3" type="audio/mpeg">
+									</audio>
 								</td>
 								<td>3:20</td>
 								<td>110</td>
@@ -378,8 +397,9 @@
 								</div>
 								</td>
 								<td>
-									<label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
-									<progress value="32" max="100"> 32% </progress>
+									<audio controls>
+										<source src="audio/party go 112bpm.mp3" type="audio/mpeg">
+									</audio>
 								</td>
 								<td>3:20</td>
 								<td>110</td>
@@ -392,7 +412,281 @@
 						</table>
 
 
+						</div>
 					</div>
+					<div id="AfroPop" class="tabcontent">
+						<!-- hero play list -->
+						<div class="hero-playlist">
+
+						<table>
+							<tr>
+								<th>TITLE</th>
+								<th></th>
+								<th>TIME</th>
+								<th>BPM</th>
+								<th></th>
+							  </tr>
+
+							  <tr>
+								<td>
+									<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/a6.jpg" alt="">
+									</div>
+									<div>
+										<h5>Juju Type Beat</h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<audio controls>
+										<source src="audio/palms lekki 104bpm TAG.mp3" type="audio/mpeg">
+									</audio>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+
+							  <tr>
+								<td>
+									<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/a7.jpg" alt="">
+									</div>
+									<div>
+										<h5>RnB/Pop Type Beat</h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<audio controls>
+										<source src="audio/party go 112bpm.mp3" type="audio/mpeg">
+									</audio>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+							  
+							  <tr>
+								<td>
+									<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/Rectangle 4.png" alt="">
+									</div>
+									<div>
+										<h5>Bayo Type Beat</h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<!-- <label style="margin-right: 1rem;" for="file"><a href="#"><i class="fa fa-pause"></i></a></label>
+									<progress id="file" value="32" max="100"> 32% </progress> -->
+									<audio controls>
+										<source src="audio/'SHO MI'.mp3" type="audio/mpeg">
+									  Your browser does not support the audio element.
+									</audio>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+
+							  <tr>
+								<td>
+									<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/Rectangle 5.png" alt="">
+									</div>
+									<div>
+										<h5>Dels Beat </h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<audio controls>
+										<source src="audio/H1 B MAJ  67 BPM.mp3" type="audio/mpeg">
+									  Your browser does not support the audio element.
+									</audio>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+
+
+							 
+							  
+						</table>
+
+
+						</div>
+					</div>
+					<div id="HipHop" class="tabcontent">
+						<!-- hero play list -->
+						<div class="hero-playlist">
+
+						<table>
+							<tr>
+								<th>TITLE</th>
+								<th></th>
+								<th>TIME</th>
+								<th>BPM</th>
+								<th></th>
+							  </tr>
+							  
+
+							  <tr>
+								<td>
+									<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/a3.jpg" alt="">
+									</div>
+									<div>
+										<h5>Davido / Rema Type Beat</h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<audio controls>
+										<source src="audio/kilo.mp3" type="audio/mpeg">
+									</audio>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+
+							  <tr>
+								<td>
+									<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/Rectangle 8.png" alt="">
+									</div>
+									<div>
+										<h5>Wizkid / Tekno Type Beat</h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<audio controls>
+										<source src="audio/last one2.mp3" type="audio/mpeg">
+									</audio>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+
+							  <tr>
+								<td>
+								<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/a5.jpg" alt="">
+									</div>
+									<div>
+										<h5>Hip-Hop Beat</h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<audio controls>
+										<source src="audio/On Top 122 BPM E MAJOR TAG.mp3" type="audio/mpeg">
+									</audio>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+
+							  <tr>
+								<td>
+									<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/a6.jpg" alt="">
+									</div>
+									<div>
+										<h5>Juju Type Beat</h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<audio controls>
+										<source src="audio/palms lekki 104bpm TAG.mp3" type="audio/mpeg">
+									</audio>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+
+							  <tr>
+								<td>
+									<div class="song-info album">
+									<!-- song title -->
+									<div class="album-art">
+										<img src="img/a7.jpg" alt="">
+									</div>
+									<div>
+										<h5>RnB/Pop Type Beat</h5>
+									</div>
+								</div>
+								</td>
+								<td>
+									<audio controls>
+										<source src="audio/party go 112bpm.mp3" type="audio/mpeg">
+									</audio>
+								</td>
+								<td>3:20</td>
+								<td>110</td>
+								<td>
+									<img class="cart-icon" style="margin-right: 1.5rem;" src="img/share_black_24dp (1).svg" alt="">
+									<button class="cart">BUY <img src="img/add_shopping_cart_black_24dp (1).svg" alt=""></button>
+								</td>
+							  </tr>
+							  
+						</table>
+
+
+						</div>
+					</div>
+
+
+
+					
 				</div>
 			</div>
 			<!--/ hero end -->
@@ -664,6 +958,9 @@
 										<img class="img-responsive" src="img/b3.jpg" alt="" />
 										<!-- paragraph -->
 										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+										<audio controls class="beat-width">
+											<source src="audio/party go 112bpm.mp3" type="audio/mpeg">
+										  </audio>
 									</div>
 									<!-- featured information -->
 									<div class="featured-item-info">
@@ -689,6 +986,9 @@
 										<img class="img-responsive" src="img/b4.jpg" alt="" />
 										<!-- paragraph -->
 										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+										<audio controls class="beat-width">
+											<source src="audio/side ways.mp3" type="audio/mpeg">
+										  </audio>
 									</div>
 									<!-- featured information -->
 									<div class="featured-item-info">
@@ -713,6 +1013,9 @@
 										<img class="img-responsive" src="img/b2.jpg" alt="" />
 										<!-- paragraph -->
 										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+										<audio controls class="beat-width">
+											<source src="audio/sweet.mp3" type="audio/mpeg">
+										  </audio>
 									</div>
 									<!-- featured information -->
 									<div class="featured-item-info">
@@ -737,6 +1040,9 @@
 										<img class="img-responsive" src="img/b5.jpg" alt="" />
 										<!-- paragraph -->
 										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+										<audio controls class="beat-width">
+											<source src="audio/Wetin Dey.mp3" type="audio/mpeg">
+										  </audio>
 									</div>
 									<!-- featured information -->
 									<div class="featured-item-info">
@@ -761,6 +1067,9 @@
 										<img class="img-responsive" src="img/b6.jpeg" alt="" />
 										<!-- paragraph -->
 										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+										<audio controls class="beat-width">
+											<source src="audio/you know prod by DelsBeat 130bpm.mp3" type="audio/mpeg">
+										  </audio>
 									</div>
 									<!-- featured information -->
 									<div class="featured-item-info">
@@ -785,6 +1094,9 @@
 										<img class="img-responsive" src="img/b7.jpeg" alt="" />
 										<!-- paragraph -->
 										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+										<audio controls class="beat-width">
+											<source src="audio/'SHO MI'.mp3" type="audio/mpeg">
+										  </audio>
 									</div>
 									<!-- featured information -->
 									<div class="featured-item-info">
@@ -806,9 +1118,12 @@
 									<!-- image container -->
 									<div class="figure">
 										<!-- image -->
-										<img class="img-responsive" src="img/b8.png" alt="" />
+										<img class="img-responsive" src="img/b1.png" alt="" />
 										<!-- paragraph -->
 										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+										<audio controls class="beat-width">
+											<source src="audio/kilo.mp3" type="audio/mpeg">
+										  </audio>
 									</div>
 									<!-- featured information -->
 									<div class="featured-item-info">
@@ -833,6 +1148,9 @@
 										<img class="img-responsive" src="img/b1.png" alt="" />
 										<!-- paragraph -->
 										<p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+										<audio controls class="beat-width">
+											<source src="audio/last one2.mp3" type="audio/mpeg">
+										  </audio>
 									</div>
 									<!-- featured information -->
 									<div class="featured-item-info">
@@ -887,7 +1205,7 @@
 						<!-- heading -->
 						<h3>Sign Up For Newsletter</h3>
 						<!-- paragraph -->
-						<p>Subscribe for more awesome stuff from me.</p>
+						<p>Subscribe for more awesome contents from me.</p>
 						<!-- subscribe form -->
 						<form>
 							<div class="input-group">
@@ -927,7 +1245,7 @@
 								<!-- big icon -->
 								<i class="fa fa-wifi"></i>
 								<!-- contact details  -->
-								<span class="contact-details">Ibiyemiareo@gmail.com</span>
+								<span class="contact-details">Officialdelsbeat@gmail.com</span>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
